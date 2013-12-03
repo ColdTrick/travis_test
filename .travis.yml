@@ -18,7 +18,7 @@ matrix:
        - mkdir ../elgg-coding-standards
        - git clone https://github.com/Elgg/elgg-coding-standards.git ../elgg-coding-standards/
       script:
-       - phpcs --standard=../elgg-coding-standards/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated* engine/classes engine/lib
+       - phpcs --standard=../elgg-coding-standards/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated*,*/vendors/*
 
 script:
  - phpunit
