@@ -1,6 +1,7 @@
 language: php
 
 php:
+ - 5.2
  - 5.3
  - 5.4
  - 5.5
@@ -19,5 +20,3 @@ matrix:
        - git clone https://github.com/Elgg/elgg-coding-standards.git ../elgg-coding-standards/
       script:
        - phpcs --standard=../elgg-coding-standards/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated*,*/vendors/* ./ 
-
-script:
