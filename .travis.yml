@@ -10,13 +10,11 @@ branches:
   only:
     - master
 
-matrix:
-  include:
-    - php: 5.3
-      before_script:
-       - pear install pear/PHP_CodeSniffer
-       - phpenv rehash
-       - mkdir ../elgg-coding-standards
-       - git clone https://github.com/Elgg/elgg-coding-standards.git ../elgg-coding-standards/
-      script:
-       - phpcs --standard=../elgg-coding-standards/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated*,*/vendors/* ./ 
+before_script:
+ - pear install pear/PHP_CodeSniffer
+ - phpenv rehash
+ - mkdir ../elgg-coding-standards
+ - git clone https://github.com/Elgg/elgg-coding-standards.git ../elgg-coding-standards/
+
+script:
+ - phpcs --standard=../elgg-coding-standards/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated*,*/vendors/* ./ 
