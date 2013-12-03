@@ -20,5 +20,4 @@ matrix:
       script:
        - phpcs --standard=../elgg-coding-standards/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated*,*/vendors/* ./ 
 
-script:
- - phpunit
+script: build.sh
