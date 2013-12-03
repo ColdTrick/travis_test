@@ -1,4 +1,7 @@
 <phpunit>
 	<testsuites>
+		<testsuite name="Travis Test Testsuite">
+            
+        </testsuite>
 	</testsuites>
 </phpunit>
