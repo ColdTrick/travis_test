@@ -1,2 +1,4 @@
 <phpunit>
+	<testsuites>
+	</testsuites>
 </phpunit>
