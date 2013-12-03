@@ -1,4 +1,16 @@
 <?php
+/**
+ * Start file
+ *
+ * Does system specific stuff
+ */
 
-	function test(){
-	}
+/**
+ * Test function
+ *
+ * @return void
+ */
+function test() {
+	
+	// this function does nothing
+}
